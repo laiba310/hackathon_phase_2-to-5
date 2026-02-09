@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0A0A0A;
+  --foreground: #F5F5F5;
+  --cyan-glow: rgba(6, 182, 212, 0.3);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #06B6D4 #1A1A1A;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #1A1A1A;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #06B6D4;
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #0891B2;
+}
+
+body {
+  @apply bg-gray-900 text-gray-100;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(6, 182, 212, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(6, 182, 212, 0.05) 0%, transparent 50%);
+}
+
+input, textarea, select {
+  @apply text-gray-100 border-gray-600 placeholder-gray-400 bg-gray-800;
+  @apply focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400;
+  @apply transition-all duration-200;
+}
+
+button {
+  @apply transition-all duration-200;
+}
+
+.glass-effect {
+  background: rgba(26, 26, 26, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.cyan-glow {
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
+}
+
+.cyan-glow-strong {
+  box-shadow: 0 0 30px rgba(6, 182, 212, 0.5);
+}
+
+.card-hover {
+  @apply hover:bg-gray-700 hover:border-cyan-400;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.smooth-corners {
+  border-radius: 1rem;
+}
+
+.gradient-cyan {
+  background: linear-gradient(135deg, #06B6D4 0%, #0891B2 100%);
+}
+
+.text-gradient-cyan {
+  background: linear-gradient(135deg, #0891B2 0%, #06B6D4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
