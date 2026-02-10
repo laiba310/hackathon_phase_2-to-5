@@ -112,7 +112,7 @@ export default function LoginPage(): React.ReactElement {
       <div className="lg:hidden bg-gray-800 border-b-2 border-cyan-400 p-6">
         <div className="flex items-center justify-center gap-4">
           <Image src={logo} alt="Logo" width={50} height={50} className="object-contain" />
-          <h1 className="text-3xl font-black text-gradient-cyan">TASK FORGE</h1>
+          <h1 className="text-3xl font-black text-gradient-cyan">Forge Flow</h1>
         </div>
       </div>
 
